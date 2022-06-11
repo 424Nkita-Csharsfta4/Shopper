@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-Panel</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./Style/mobile.css">
+    <link rel="stylesheet" href="./Style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <img src="logo.jpg" alt="">
+                <h2>Adm<span class="danger">in</span></h2>
+            </div>
+            <div class="close" id="close-btn">
+                <span class="material-icons-sharp">
+                    close
+                </span>
+            </div>
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <span class="material-symbols-outlined">
+                        person
+                        </span>
+                    <h3>Dashboard</h3>
+                </a> <a href="#">
+                    <span class="material-symbols-outlined">
+                        contact_mail
+                        </span>
+                    <h3>Castomiers</h3>
+                </a> 
+                </a> <a href="#">
+                    <span class="material-symbols-outlined">
+                        add
+                        </span>
+                    <h3>Ordes</h3>
+                </a> <a href="#">
+                    <span class="material-symbols-outlined">
+                        list_alt
+                        </span>
+                    <h3>Message</h3>
+                    <span  class="message-cout" class="material-symbols-outlined">
+                       25
+                        </span>
+                </a>
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                            settings
+                            </span>
+                        <h3>Product</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                            logout
+                            </span>
+                        <h3>Logout</h3>
+                    </a>
+                </a>
+            </div>
+        </aside>
+        <main>
+            <h1>DashBord</h1>
+            <div class="date">
+                <input type="date">
+            </div>
+            <div class="insights">
+                <div class="sales">
+                    <span class="material-symbols-outlined">
+                        monitoring
+                        </span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>Total Sales</h3>
+                                <h1>$28,03</h1>
+                            </div>
+                            <div class="progress">
+                                <svg>
+                                    <circle cx='38' cy='38' r='36'></circle>
+                                </svg>
+                                <div class="number">
+                                    <p>79%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <small class="text-muted">
+                            Last 24 Hours
+                        </small>
+                </div>
+                <div class="expensis">
+                    <span class="material-symbols-outlined">
+                        stacked_line_chart
+                        </span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>Total Sales</h3>
+                                <h1>$50,76</h1>
+                            </div>
+                            <div class="progress">
+                                <svg>
+                                    <circle cx='38' cy='38' r='36'></circle>
+                                </svg>
+                                <div class="number">
+                                    <p>79%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <small class="text-muted">
+                            Last 24 Hours
+                        </small>
+                </div>
+                <div class="income">
+                    <span class="material-symbols-outlined">
+                        monitoring
+                        </span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>Total Sales</h3>
+                                <h1>$38,31</h1>
+                            </div>
+                            <div class="progress">
+                                <svg>
+                                    <circle cx='38' cy='38' r='36'></circle>
+                                </svg>
+                                <div class="number">
+                                    <p>79%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <small class="text-muted">
+                            Last 24 Hours
+                        </small>
+                </div>
+            </div>
+            <div class="recent-order">
+                <h2>Recent Ordes</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Product Name</th>
+                            <th>Product Name</th>
+                            <th>Product Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Foldable Mini Drone
+                            </td>
+                            <td>
+                                85631
+                            </td>
+                            <td>
+                                Due
+                            </td>
+                            <td class="warning">
+                                Pending
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Foldable Mini Drone
+                            </td>
+                            <td>
+                                85631
+                            </td>
+                            <td>
+                                Due
+                            </td>
+                            <td class="warning">
+                                Pending
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Foldable Mini Drone
+                            </td>
+                            <td>
+                                85631
+                            </td>
+                            <td>
+                                Due
+                            </td>
+                            <td class="warning">
+                                Pending
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Foldable Mini Drone
+                            </td>
+                            <td>
+                                85631
+                            </td>
+                            <td>
+                                Due
+                            </td>
+                            <td class="warning">
+                                Pending
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#!">Show All</a>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

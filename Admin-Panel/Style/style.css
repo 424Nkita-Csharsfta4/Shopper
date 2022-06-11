@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-appearance: 0;
+     -moz-appearance: 0;
+          appearance: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+html body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Roboto',sans-serif;
+  font-size: 0.88rem;
+  background: #f6f6f9;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow-x: hidden;
+  color: #7d8da1;
+}
+
+html .container {
+  display: -ms-grid;
+  display: grid;
+  width: 96%;
+  margin: 0 auto;
+  gap: 1.8rem;
+  -ms-grid-columns: 14rem auto 23rem;
+      grid-template-columns: 14rem auto 23rem;
+}
+
+html .container aside {
+  height: 100vh;
+}
+
+html .container .aside .top {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1.4rem;
+}
+
+html .container aside .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.8rem;
+}
+
+html .container aside .logo img {
+  width: 2rem;
+  height: 2rem;
+}
+
+html .container aside .close {
+  display: none;
+}
+
+html .container aside .sidebar {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 86vh;
+  position: relative;
+  top: 3rem;
+}
+
+html .container aside h3 {
+  font-weight: 500;
+}
+
+html .container aside .sidebar a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #7d8da1;
+  margin-left: 2rem;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 3.7rem;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+html .container aside .sidebar a span {
+  font-size: 1.6rem;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+html .container aside .sidebar a:last-child {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+}
+
+html .container aside .sidebar a.active {
+  background: #dce1eb;
+  color: #7380ec;
+  margin-left: 0;
+}
+
+html .container aside .sidebar a.active::before {
+  content: "";
+  width: 6px;
+  height: 100%;
+  background: #7380ec;
+}
+
+html .container aside .sidebar a.active span {
+  color: #7380ec;
+  margin-left: calc(1rem - 3px);
+}
+
+html .container aside .sidebar a:hover {
+  color: #7380ec;
+}
+
+html .container aside .sidebar a:hover span {
+  margin-left: 1rem;
+}
+
+html .container aside .sidebar .message-cout {
+  background: #ff7782;
+  color: #fff;
+  padding: 2px 10px;
+  font-size: 11px;
+  border-radius: 0.4rem;
+}
+
+html main {
+  margin-top: 1.4rem;
+}
+
+html main .date {
+  display: inline-block;
+  background: #dce1eb;
+  border-radius: 0.4rem;
+  margin-top: 1rem;
+  padding: 0.5rem 1.6rem;
+}
+
+html main .date input[type="date"] {
+  background: transparent;
+  color: #7d8da1;
+}
+
+html main .insights {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+}
+
+html main .insights > div {
+  background: #fff;
+  padding: 1.8rem;
+  border-radius: 1.2rem;
+  margin-top: 1rem;
+  -webkit-box-shadow: 0 2rem 3rem var(#dce1eb);
+          box-shadow: 0 2rem 3rem var(#dce1eb);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+html main .insights > div:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+html main .insights > div span {
+  background: #7380ec;
+  padding: 0.5rem;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 2rem;
+}
+
+html main .insights > div.expenses {
+  background: #ff7782;
+}
+
+html main .insights > div.income span {
+  background: #41f1b6;
+}
+
+html main .insights > div .middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html main .insights h3 {
+  margin: 1rem 0 0.6rem;
+  font-size: 1rem;
+}
+
+html main .insights .progress {
+  position: relative;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+}
+
+html main .insights svg {
+  width: 7rem;
+  height: 7rem;
+}
+
+html main .insights svg circle {
+  fill: none;
+  stroke: #7380ec;
+  stroke-width: 14;
+  stroke-linecap: round;
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
+  stroke-dasharray: 110;
+  stroke-dashoffset: 92;
+}
+
+html main .insights .sales svg circle {
+  stroke-dashoffset: -30;
+  stroke-dasharray: 200;
+}
+
+html main .insights .expenses svg circle {
+  stroke-dashoffset: 20;
+  stroke-dasharray: 80;
+}
+
+html main .insights .expenses svg circle {
+  stroke-dashoffset: 35;
+  stroke-dasharray: 85;
+}
+
+html main .insights .progress .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html main .recent-orders {
+  margin-top: 5%;
+}
+
+html main .recent-orders h2 {
+  margin-bottom: 0.8rem;
+}
+
+html main .recent-orders table {
+  background: #fff;
+  width: 100%;
+  border-radius: 1.2rem;
+  padding: 1.8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 2rem 3rem var(#dce1eb);
+          box-shadow: 0 2rem 3rem var(#dce1eb);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+html main .recent-orders table:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+html main table tbody td {
+  height: 2.8rem;
+  border-bottom: 1px solid #dce1eb;
+  color: #7d8da1;
+}
+
+html main table tbody tr:last-child td {
+  border: none;
+}
+
+html main .recent-orders a {
+  text-align: center;
+  display: block;
+  margin: 1rem auto;
+  color: #7380ec;
+}
+
+a {
+  color: #7d8da1;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 0.87rem;
+}
+
+h4 {
+  font-size: 0.8rem;
+}
+
+h5 {
+  font-size: 0.77rem;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+.profile-photo {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.text-muted {
+  color: #7d8da1;
+}
+
+p {
+  color: #363949;
+}
+
+b {
+  color: #7d8da1;
+}
+
+.primary {
+  color: #7380ec;
+}
+
+.danger {
+  color: #ff7782;
+}
+
+.success {
+  color: #41f1b6;
+}
+
+.warning {
+  color: #ffbb55;
+}
+/*# sourceMappingURL=style.css.map */
